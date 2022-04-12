@@ -134,9 +134,8 @@ body {
 
 .contact-icon {
   margin-right: 10px;
+
   fill: var(--primary-text-color);
-  background-position: center;
-  background-size: cover;
 }
 
 .contact-icon:hover,
@@ -420,14 +419,22 @@ body {
 }
 
 .masege-icons {
+  display: inline-block;
   margin-right: 10px;
+  padding: 12px 12px;
+
+  fill: var(--primary-white-color);
   background-color: rgba(255, 255, 255, 0.1);
   background-position: center;
   background-size: cover;
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  
+}
+
+.masege-icons:hover,
+.masege-icons:focus {
+  background-color: var(--accent-color);
 }
 
 /*Portfolio*/
@@ -531,13 +538,14 @@ body {
 }
 
 .masege-icon {
+  display: inline-block;
+  margin-bottom: 30px;
+  margin-right: 10px;
+  padding: 12px 12px;
+
   width: 44px;
   height: 44px;
-  margin-top: 0;
-  margin-bottom: 0;
   fill: var(--secondary-fons-color);
-  background-position: center;
-  background-size: cover;
   border-radius: 50%;
   background-color: var(--primary-white-color);
 }
@@ -548,6 +556,10 @@ body {
   background-color: var(--accent-color);
 }
 
+.not-margin {
+  margin-right: 0px;
+}
+
 /* logo-company */
 
 .list-client {
@@ -556,9 +568,10 @@ body {
 }
 
 .logo-company {
+  display: inline-block;
   padding: 16px 32px;
-  min-width: 170px;
-  min-height: 92px;
+  max-width: 170px;
+  max-height: 92px;
   border: 1px solid var(--secondary-fons-color);
 }
 
@@ -567,13 +580,11 @@ body {
   border: 1px solid var(--accent-color);
 }
 
-.logo-company:not(:last-child) {
+.margin-company:not(:last-child) {
   margin-right: 30px;
 }
 
 .company-icon {
-  margin-top: 0;
-  margin-bottom: 0;
   fill: var(--secondary-fons-color);
 }
 
